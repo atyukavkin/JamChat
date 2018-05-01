@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="55dp"
+    android:background="@drawable/chat_pattern">
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_text"
+        android:divider="@null"
+        android:padding="5dp"
+        android:layout_marginBottom="55dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        />
+</RelativeLayout>

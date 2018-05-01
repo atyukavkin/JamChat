@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionMenuTextColor">@color/actionBarTextColor</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <!--<item name="android:background">@drawable/appbar_bg</item>-->
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="MyActionBarTitleText"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionBarTextColor</item>
+    </style>
+
+    <color name="actionBarTextColor">#ffffff</color>
+    <color name="primaryColorDark">#ff5722</color>
+    <color name="primaryColorLight">#FF5824</color>
+    <color name="statusBarColor">#CC471D</color>
+
+
+</resources>

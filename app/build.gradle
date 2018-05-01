@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.smileberry.jamchat"
+        minSdkVersion 19
+        //targetSdkVersion 16
+        versionCode 14
+        versionName "0.04_pre_alpha"
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/INDEX.LIST'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services-location:11.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.1'
+    compile 'com.google.android.gms:play-services-auth-base:11.0.1'
+    compile 'com.google.android.gms:play-services-gcm:11.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+//    compile 'com.google.gms:google-services:2.1.0-alpha3'
+    compile 'com.google.maps.android:android-maps-utils:0.3.2'
+
+    compile('org.jboss.aerogear:aerogear-android-push:2.2.2') {
+        exclude group: "com.google.android.gms"
+    }
+    compile 'org.jboss.aerogear:unifiedpush-java-client:1.1.0.Final'
+    compile 'org.jboss.aerogear:aerogear-android-core:2.1.0'
+    compile 'org.jboss.aerogear:aerogear-android-auth:2.1.0'
+
+    compile 'com.sothree.slidinguppanel:library:3.0.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.0'
+
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+
+
+
+//    compile 'com.google.android.gms:play-services:11.0.0'
+    //compile 'com.google.android.gms:play-services-ads:11.0.0'
+
+}
+//apply plugin: 'com.google.gms.google-services'

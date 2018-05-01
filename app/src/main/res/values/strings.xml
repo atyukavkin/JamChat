@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JamChat</string>
+    <string name="title_activity_chat_map">JamChat</string>
+    <string name="hello">hello</string>
+    <!-- 80 bytes-->
+    <string name="lorem_ipsum_80">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra fusce.</string>
+    <!-- 160 bytes-->
+    <string name="lorem_ipsum_160">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in molestie est. Proin ac eros vehicula, porta nisi in, vulputate risus. Fusce commodo euismod sed.</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_location">My Location</string>
+
+    <string-array name="fragment_name_array">
+        <item>Settings</item>
+        <item>About</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="slogan">Discover your local environment anonymously</string>
+
+    <string name="contactText">If you have any questions, concerns or suggestions please contact us directly
+        <a href="mailto:smileberry.games@gmail.com">smileberry.games@gmail.com</a>.
+    </string>
+
+
+</resources>

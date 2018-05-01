@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/leftIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_message" />
+        <TextView
+            android:textIsSelectable="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/leftIcon"
+            android:layout_toEndOf="@id/leftIcon"
+            android:id="@+id/textleft"
+            style="@style/chatBallonStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_balloon"
+            android:text="Say: Hello"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/rightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_message" />
+        <TextView
+            android:layout_toLeftOf="@id/rightIcon"
+            android:layout_toStartOf="@id/rightIcon"
+            android:layout_centerVertical="true"
+            android:textIsSelectable="true"
+            android:id="@+id/textRight"
+            style="@style/chatBallonStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_chat_balloon"
+            android:text="Say: Hello"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
